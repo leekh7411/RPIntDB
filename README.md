@@ -25,7 +25,7 @@ RNA와 Protein의 상호작용(Interaction) 혹은 결합 유무를 판단하기
 RPI classification을 수행하기 위해서는 저장된 npz 파일을 불러오고 원하는 classification 모델을 선택한 다음 평가를 진행해야한다. 프로그래밍으로 직접 수행해야할 목록은 다음과 같다
 
 1. 전처리 과정을 수행하여 npz타입으로 저장된 파일을 읽기
-2. 학습데이터셋과 평가용 데이터셋을 분리 **(ex. RPI2241은 학습용, RPI369는 평가용)**
+2. 학습데이터셋과 평가용 데이터셋을 분리 **(ex. K-fold crossvalidation)**
 3. Binary classification 모델을 선택 **(ex. Random Forest, Support Vector Machine, ...)**
 4. 학습된 모델과 테스트 데이터셋을 사용하여 성능 평가
 
